@@ -16,7 +16,7 @@
         android:bottom="4.0dp"
         android:top="4.0dp">
         <shape android:shape="rectangle">
-            <solid android:color="@*android:color/system_neutral2_900" />
+            <solid android:color="@*android:color/system_neutral2_200" />
             <corners
                 android:bottomLeftRadius="@*android:dimen/config_dialogCornerRadius"
                 android:bottomRightRadius="@*android:dimen/config_dialogCornerRadius"

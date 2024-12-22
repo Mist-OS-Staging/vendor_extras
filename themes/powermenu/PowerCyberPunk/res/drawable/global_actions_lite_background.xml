@@ -24,7 +24,7 @@
         android:end="80dp"
         android:top="6dp">
         <shape android:shape="rectangle">
-            <solid android:color="@*android:color/system_neutral2_900" />
+            <solid android:color="@*android:color/system_neutral2_200" />
             <corners android:radius="@*android:dimen/config_dialogCornerRadius" />
         </shape>
     </item>
@@ -33,7 +33,7 @@
         android:start="80dp"
         android:top="3dp">
         <shape android:shape="rectangle">
-            <solid android:color="@*android:color/system_neutral2_900" />
+            <solid android:color="@*android:color/system_neutral2_200" />
             <corners android:radius="@*android:dimen/config_dialogCornerRadius" />
         </shape>
     </item>
