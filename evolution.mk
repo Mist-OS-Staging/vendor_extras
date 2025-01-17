@@ -419,6 +419,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     NotifCyberPunk \
     NotifDuoline \
+    NotifFluid \
     NotifIOS \
     NotifLayers
 
