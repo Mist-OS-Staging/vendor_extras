@@ -378,7 +378,6 @@ PRODUCT_PACKAGES += \
 # Navbar
 PRODUCT_PACKAGES += \
     LineageNavigationBarNarrowSpace \
-    LineageNavigationBarNoHint \
     LineageNavigationBarNoSpace
 
 # Navbar styles
