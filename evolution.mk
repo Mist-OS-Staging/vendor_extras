@@ -375,11 +375,6 @@ PRODUCT_PACKAGES += \
     BrightnessSliderThumbSliderOverlay \
     BrightnessSliderTranslucentOverlay
 
-# Navbar
-PRODUCT_PACKAGES += \
-    LineageNavigationBarNarrowSpace \
-    LineageNavigationBarNoSpace
-
 # Navbar styles
 PRODUCT_PACKAGES += \
     NavbarAndroidOverlay \
