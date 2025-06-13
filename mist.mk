@@ -5,17 +5,11 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-EVO_EXTRAS_PATH := vendor/extras
+MIST_EXTRAS_PATH := vendor/extras
 
 # Game Props
-TARGET_PRODUCT_PROP += $(EVO_EXTRAS_PATH)/gameprops/product.prop
+TARGET_PRODUCT_PROP += $(MIST_EXTRAS_PATH)/gameprops/product.prop
 
-# Accord
-TARGET_INCLUDE_ACCORD ?= true
-ifeq ($(TARGET_INCLUDE_ACCORD),true)
-PRODUCT_PACKAGES += \
-    Accord
-endif
 
 # Clocks (SystemUI)
 PRODUCT_PACKAGES += \
