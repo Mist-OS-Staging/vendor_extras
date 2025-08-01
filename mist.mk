@@ -320,6 +320,7 @@ PRODUCT_PACKAGES += \
 
 # WiFi Icons
 PRODUCT_PACKAGES += \
+    a16Wifi \
     AiirOWiFiOverlay \
     AuroraWiFiOverlay \
     BarsWiFiOverlay \
