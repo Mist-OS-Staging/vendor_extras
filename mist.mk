@@ -233,9 +233,11 @@ PRODUCT_PACKAGES += \
 
 # Icon Shapes
 PRODUCT_PACKAGES += \
+    IconShapeArchOverlay \
     IconShapeCloudyOverlay \
     IconShapeCylinderOverlay \
     IconShapeFlowerOverlay \
+    IconShapeFourSidedCookieOverlay \
     IconShapeHeartOverlay \
     IconShapeHexagonOverlay \
     IconShapeIosOverlay \
@@ -246,6 +248,7 @@ PRODUCT_PACKAGES += \
     IconShapeRoundedRectOverlay \
     IconShapeSamsungOverlay \
     IconShapeScrollOverlay \
+    IconShapeSevenSidedCookieOverlay \
     IconShapeStretchedOverlay \
     IconShapeSquareOverlay \
     IconShapeSquircleOverlay \
