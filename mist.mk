@@ -6,7 +6,7 @@
 #
 
 # Accord
-TARGET_INCLUDE_ACCORD ?= true
+TARGET_INCLUDE_ACCORD ?= false
 ifeq ($(TARGET_INCLUDE_ACCORD),true)
 PRODUCT_PACKAGES += \
     Accord
