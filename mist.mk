@@ -479,6 +479,9 @@ endif
 PRODUCT_PACKAGES += \
     AODWALL
 
+# Game Props
+TARGET_PRODUCT_PROP += vendor/extras/gameprops/gameprops.prop
+
 # Include {Lato,Rubik} fonts
 $(call inherit-product-if-exists, external/google-fonts/lato/fonts.mk)
 $(call inherit-product-if-exists, external/google-fonts/rubik/fonts.mk)
