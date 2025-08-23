@@ -451,11 +451,11 @@ PRODUCT_PACKAGES += \
     AndroidBlackThemeOverlay
 
 # Udfps
-#ifeq ($(TARGET_HAS_UDFPS),true)
-#PRODUCT_PACKAGES += \
-#    UdfpsAnimations \
-#    UdfpsIcons
-#endif
+ifeq ($(TARGET_HAS_UDFPS),true)
+PRODUCT_PACKAGES += \
+    UdfpsAnimations \
+    UdfpsIcons
+endif
 
 # Utility Overlays
 #PRODUCT_PACKAGES += \
