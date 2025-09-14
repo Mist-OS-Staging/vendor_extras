@@ -5,13 +5,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Accord
-TARGET_INCLUDE_ACCORD ?= false
-ifeq ($(TARGET_INCLUDE_ACCORD),true)
-PRODUCT_PACKAGES += \
-    Accord
-endif
-
 # Clocks (SystemUI)
 PRODUCT_PACKAGES += \
     SystemUIClocks-BigNum \
