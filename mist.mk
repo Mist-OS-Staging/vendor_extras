@@ -344,6 +344,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     PowerCyberPunk \
     PowerDuoline \
+    PowerFluid \
     PowerIOS \
     PowerLayers
 
