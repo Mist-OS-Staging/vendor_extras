@@ -364,10 +364,10 @@ PRODUCT_PACKAGES += \
 endif
 
 # Utility Overlays
-#PRODUCT_PACKAGES += \
-#    HideSmartSpace \
-#    SmartSpaceOffset \
-#    HideClock
+PRODUCT_PACKAGES += \
+    HideSmartSpace \
+    SmartSpaceOffset \
+    HideClock
 
 # Volume Styles
 #PRODUCT_PACKAGES += \
