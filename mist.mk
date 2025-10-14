@@ -284,7 +284,6 @@ PRODUCT_PACKAGES += \
 #    BrightnessSliderTranslucentOverlay
 
 # Navbar styles
-ifeq ($(WITH_GMS),true)
 PRODUCT_PACKAGES += \
     NavbarAndroidPixelLauncherOverlay \
     NavbarAsusPixelLauncherOverlay \
@@ -297,20 +296,20 @@ PRODUCT_PACKAGES += \
     NavbarOneUiPixelLauncherOverlay \
     NavbarSammyPixelLauncherOverlay \
     NavbarTecnoCamonPixelLauncherOverlay
-else
-PRODUCT_PACKAGES += \
-    NavbarAndroidOverlay \
-    NavbarAsusOverlay \
-    NavbarDoraOverlay \
-    NavbarEvolutionOverlay \
-    NavbarMotoOverlay \
-    NavbarNexusOverlay \
-    NavbarOldOverlay \
-    NavbarOnePlusOverlay \
-    NavbarOneUiOverlay \
-    NavbarSammyOverlay \
-    NavbarTecnoCamonOverlay
-endif
+#else
+#PRODUCT_PACKAGES += \
+#    NavbarAndroidOverlay \
+#    NavbarAsusOverlay \
+#    NavbarDoraOverlay \
+#    NavbarEvolutionOverlay \
+#    NavbarMotoOverlay \
+#    NavbarNexusOverlay \
+#    NavbarOldOverlay \
+#    NavbarOnePlusOverlay \
+#    NavbarOneUiOverlay \
+#    NavbarSammyOverlay \
+#    NavbarTecnoCamonOverlay
+#endif
 
 # QS UI Style
 #PRODUCT_PACKAGES += \
