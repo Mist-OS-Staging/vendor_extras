@@ -196,7 +196,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ScreenshotEditor
 
-ifeq ($(TARGET_CUSTOM_UDFPS),true)
+ifeq ($(TARGET_HAS_UDFPS),true)
     PRODUCT_PACKAGES += \
         UdfpsIcons \
         UdfpsAnimations
