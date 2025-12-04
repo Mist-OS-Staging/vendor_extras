@@ -185,7 +185,6 @@ PRODUCT_PACKAGES += \
 
 # QS
 PRODUCT_PACKAGES += \
-    QSDualTone \
     QSMedia
 
 # Themes
