@@ -40,6 +40,13 @@ ifneq ($(WITH_GMS),true)
         vendor/extras/product/etc/sysconfig/preinstalled_packages_repair_mode.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled_packages_repair_mode.xml
 endif
 
+# Custom Overlays
+PRODUCT_PACKAGES += \
+    GlanceableHubConfigOverlay \
+    GlanceableHubSettingsConfigOverlay \
+    GlanceableHubSettingsConfigOverlay2022 \
+    GlanceableHubSysuiConfigOverlay
+
 # Fonts
 PRODUCT_PACKAGES += \
     fonts_customization.xml \
