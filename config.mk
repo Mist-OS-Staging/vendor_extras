@@ -160,16 +160,16 @@ PRODUCT_PACKAGES += \
     ZigZagWiFiOverlay
 
 PRODUCT_PACKAGES += \
-    NavbarAndroidPixelLauncherOverlay \
-    NavbarAsusPixelLauncherOverlay \
-    NavbarDoraPixelLauncherOverlay \
-    NavbarMotoPixelLauncherOverlay \
-    NavbarNexusPixelLauncherOverlay \
-    NavbarOldPixelLauncherOverlay \
-    NavbarOnePlusPixelLauncherOverlay \
-    NavbarOneUiPixelLauncherOverlay \
-    NavbarSammyPixelLauncherOverlay \
-    NavbarTecnoCamonPixelLauncherOverlay
+    NavbarAndroidOverlay \
+    NavbarAsusOverlay \
+    NavbarMotoOverlay \
+    NavbarNexusOverlay \
+    NavbarOldOverlay \
+    NavbarOnePlusOverlay \
+    NavbarOneUiOverlay \
+    NavbarSammyOverlay \
+    NavbarTecnoCamonOverlay \
+    NavbarDoraOverlay
 
 # Notification Themes
 #PRODUCT_PACKAGES += \
