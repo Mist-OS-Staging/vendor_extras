@@ -188,6 +188,18 @@ PRODUCT_PACKAGES += \
     QSDualTone \
     QSMedia
 
+# Switch
+PRODUCT_PACKAGES += \
+    SwitchBoss \
+    SwitchDora \
+    SwitchDpool \
+    SwitchHaa \
+    SwitchIos \
+    SwitchOnOff \
+    SwitchPika \
+    SwitchSmile \
+    SwitchYesNo
+
 # Themes
 PRODUCT_PACKAGES += \
     AndroidBlackThemeOverlay \
