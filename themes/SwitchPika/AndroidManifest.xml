@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:versionCode="1" 
+    android:versionName="1.0" 
+    android:compileSdkVersion="36" 
+    android:compileSdkVersionCodename="16" 
+    package="com.idc.declan.pika" 
+    platformBuildVersionCode="36" 
+    platformBuildVersionName="16">
+
+    <uses-sdk 
+        android:minSdkVersion="30" 
+        android:targetSdkVersion="36"/>
+
+    <overlay 
+        android:priority="1" 
+        android:targetPackage="com.android.settings" 
+        android:category="android.customization.switch_style"
+        android:isStatic="true"/>
+
+    <application 
+        android:label="Pikacu" 
+        android:hasCode="false" 
+        android:extractNativeLibs="true"/>
+
+</manifest>

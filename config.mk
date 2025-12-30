@@ -188,6 +188,11 @@ PRODUCT_PACKAGES += \
     QSMedia \
     QSAltShade
 
+# Custom Switch
+PRODUCT_PACKAGES += \
+    BlueSmile \
+    SwitchPika
+
 # Themes
 PRODUCT_PACKAGES += \
     AndroidBlackThemeOverlay \
