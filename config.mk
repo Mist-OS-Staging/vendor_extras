@@ -193,6 +193,13 @@ PRODUCT_PACKAGES += \
     AndroidBlackThemeOverlay \
     ImmersiveNavigationOverlay
 
+# Switch Styles
+PRODUCT_PACKAGES += \
+    SwitchSmile \
+    SwitchMD2 \
+    SwitchOnePlus \
+    SwitchTelegram
+
 PRODUCT_PACKAGES += \
     ScreenshotEditor
 
