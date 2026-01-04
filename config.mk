@@ -124,6 +124,7 @@ PRODUCT_PACKAGES += \
     LinearSignalOverlay \
     MiniSignalOverlay \
     NothingDotSignalOverlay \
+    OOS16SignalOverlay \
     PillsSignalOverlay \
     PlumpySignalOverlay \
     ROGSignalOverlay \
@@ -141,6 +142,7 @@ PRODUCT_PACKAGES += \
 # WiFi Icons
 PRODUCT_PACKAGES += \
     a16Wifi \
+    OOS16Wifi \
     AuroraWiFiOverlay \
     BarsWiFiOverlay \
     BoldWiFiOverlay \
