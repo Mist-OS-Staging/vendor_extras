@@ -228,6 +228,12 @@ PRODUCT_PACKAGES += \
 	bootanimation.zip \
 	bootanimation-dark.zip
 
+# QS
+PRODUCT_PACKAGES += \
+    QSMedia
+
+$(call inherit-product, vendor/extras/themes/bootanimation/bootanimation.mk)
+
 TARGET_PRODUCT_PROP += vendor/extras/gameprops/gameprops.prop
 
 PRODUCT_COPY_FILES += \
