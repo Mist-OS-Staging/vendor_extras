@@ -236,6 +236,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     QSMedia
 
+# WiFi Icons
+PRODUCT_PACKAGES += \
+    AuroraWiFiOverlay \
+    XperiaWiFiOverlay \
+    LinearWiFiOverlay \
+    NothingDotWiFiOverlay \
+    ZigZagWiFiOverlay
+
 $(call inherit-product, vendor/extras/themes/bootanimation/bootanimation.mk)
 
 TARGET_PRODUCT_PROP += vendor/extras/gameprops/gameprops.prop

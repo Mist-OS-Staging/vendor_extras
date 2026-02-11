@@ -16,6 +16,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.custom.overlay.systemui.wifiLinear" android:versionCode="1"
     android:versionName="1.0">
-    <overlay android:targetPackage="android" android:category="android.theme.customization.wifi_icon" android:priority="1"/>
+    <overlay android:targetPackage="com.android.systemui" android:category="android.theme.customization.wifi_icon" android:priority="1"/>
     <application android:label="Linear" android:hasCode="false" android:allowBackup="false"/>
 </manifest>
