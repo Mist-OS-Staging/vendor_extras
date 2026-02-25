@@ -215,6 +215,11 @@ PRODUCT_PACKAGES += \
     NothingDotWiFiOverlay \
     ZigZagWiFiOverlay
 
+PRODUCT_PACKAGES += \
+    HideSmartSpace \
+    SmartSpaceOffset \
+    HideClock
+
 TARGET_PRODUCT_PROP += vendor/extras/gameprops/gameprops.prop
 
 PRODUCT_COPY_FILES += \
