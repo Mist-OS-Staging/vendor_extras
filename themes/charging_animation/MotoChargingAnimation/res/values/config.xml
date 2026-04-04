@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="config_useCustomChargingAnim">true</bool>
+    <integer name="config_chargingAnimMode">1</integer>
+    <bool name="config_chargingAnimDimEnabled">true</bool>
+    <integer name="config_chargingAnimDimAlpha">180</integer>
+    <integer name="config_chargingAnimLowBatteryThreshold">15</integer>
+    <color name="config_chargingAnimPercentColor">#FFFFFFFF</color>
+    <color name="config_chargingAnimLowBatteryColor">#FFFF3B30</color>
+    <color name="config_chargingAnimLightColor">#FF1A73E8</color>
+    <integer name="config_chargingAnimBoltWidth">50</integer>
+    <integer name="config_chargingAnimBoltHeight">100</integer>
+    <integer name="config_chargingAnimBoltRadius">322</integer>
+</resources>

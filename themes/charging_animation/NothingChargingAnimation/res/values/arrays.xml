@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="config_chargingAnimFrames">
+        <item>@drawable/nt_charge_ripple_01</item>
+        <item>@drawable/nt_charge_ripple_02</item>
+        <item>@drawable/nt_charge_ripple_03</item>
+        <item>@drawable/nt_charge_ripple_04</item>
+        <item>@drawable/nt_charge_ripple_05</item>
+        <item>@drawable/nt_charge_ripple_06</item>
+        <item>@drawable/nt_charge_ripple_07</item>
+        <item>@drawable/nt_charge_ripple_08</item>
+        <item>@drawable/nt_charge_ripple_09</item>
+        <item>@drawable/nt_charge_ripple_10</item>
+        <item>@drawable/nt_charge_ripple_11</item>
+        <item>@drawable/nt_charge_ripple_12</item>
+        <item>@drawable/nt_charge_ripple_13</item>
+        <item>@drawable/nt_charge_ripple_14</item>
+        <item>@drawable/nt_charge_ripple_15</item>
+        <item>@drawable/nt_charge_ripple_16</item>
+        <item>@drawable/nt_charge_ripple_17</item>
+        <item>@drawable/nt_charge_ripple_18</item>
+        <item>@drawable/nt_charge_ripple_19</item>
+        <item>@drawable/nt_charge_ripple_20</item>
+        <item>@drawable/nt_charge_ripple_21</item>
+        <item>@drawable/nt_charge_ripple_22</item>
+        <item>@drawable/nt_charge_ripple_23</item>
+        <item>@drawable/nt_charge_ripple_24</item>
+        <item>@drawable/nt_charge_ripple_25</item>
+        <item>@drawable/nt_charge_ripple_26</item>
+        <item>@drawable/nt_charge_ripple_27</item>
+        <item>@drawable/nt_charge_ripple_28</item>
+        <item>@drawable/nt_charge_ripple_29</item>
+        <item>@drawable/nt_charge_ripple_30</item>
+        <item>@drawable/nt_charge_ripple_31</item>
+        <item>@drawable/nt_charge_ripple_32</item>
+        <item>@drawable/nt_charge_ripple_33</item>
+        <item>@drawable/nt_charge_ripple_34</item>
+        <item>@drawable/nt_charge_ripple_35</item>
+        <item>@drawable/nt_charge_ripple_36</item>
+        <item>@drawable/nt_charge_ripple_37</item>
+        <item>@drawable/nt_charge_ripple_38</item>
+        <item>@drawable/nt_charge_ripple_39</item>
+        <item>@drawable/nt_charge_ripple_40</item>
+        <item>@drawable/nt_charge_ripple_41</item>
+    </array>
+
+    <array name="config_chargingAnimGlare">
+        <item>@drawable/nt_charge_glare</item>
+    </array>
+</resources>

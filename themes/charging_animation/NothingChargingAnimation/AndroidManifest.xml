@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.systemui.charging_animation.nothing">
+
+    <overlay
+        android:targetPackage="com.android.systemui"
+        android:category="android.theme.customization.charging_animation"
+        android:priority="1"
+        android:isStatic="false" />
+
+    <application
+        android:label="Nothing Charging Animation"
+        android:hasCode="false" />
+</manifest>
