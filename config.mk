@@ -208,14 +208,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     QSMedia
 
-# WiFi Icons
-PRODUCT_PACKAGES += \
-    AuroraWiFiOverlay \
-    XperiaWiFiOverlay \
-    LinearWiFiOverlay \
-    NothingDotWiFiOverlay \
-    ZigZagWiFiOverlay
-
 PRODUCT_PACKAGES += \
     HideSmartSpace \
     SmartSpaceOffset \
