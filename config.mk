@@ -41,11 +41,10 @@ ifneq ($(WITH_GMS),true)
 endif
 
 # Custom Overlays
-PRODUCT_PACKAGES += \
-    GlanceableHubConfigOverlay \
-    GlanceableHubSettingsConfigOverlay \
-    GlanceableHubSettingsConfigOverlay2022 \
-    GlanceableHubSysuiConfigOverlay
+#PRODUCT_PACKAGES += \
+#    GlanceableHubConfigOverlay \
+#    GlanceableHubSettingsConfigOverlay2022 \
+#    GlanceableHubSysuiConfigOverlay
 
 # Fonts
 PRODUCT_PACKAGES += \
