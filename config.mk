@@ -50,163 +50,164 @@ PRODUCT_PACKAGES += \
 # Fonts
 PRODUCT_PACKAGES += \
     fonts_customization.xml \
-    fonts_customization_emoji_facebook.xml \
-    fonts_customization_emoji_ios.xml \
-    fonts_customization_emoji_samsung.xml \
-    fonts_customization_emoji_swiftui.xml \
-    ClockFontACFilmstripOverlay \
-    ClockFontAccuratistOverlay \
-    ClockFontAclonicaOverlay \
-    ClockFontAlmonteSnowOverlay \
-    ClockFontAlphaCloudsOverlay \
-    ClockFontAlphaFlowersOverlay \
-    ClockFontAlphaWoodOverlay \
-    ClockFontAmaranteOverlay \
-    ClockFontAmpad3D2Overlay \
-    ClockFontBariolOverlay \
-    ClockFontBetsyFlanaganOverlay \
-    ClockFontBigCheeseOverlay \
-    ClockFontBrandayolqOverlay \
-    ClockFontBudmoJigglerOverlay \
-    ClockFontBunnyRabbitsOverlay \
-    ClockFontCFBadNewsOverlay \
-    ClockFontCFOneTwoTreesOverlay \
-    ClockFontCagliostroOverlay \
-    ClockFontCatOverlay \
-    ClockFontCoconOverlay \
-    ClockFontComfortaaOverlay \
-    ClockFontComicSansOverlay \
-    ClockFontConcentrateOverlay \
-    ClockFontCookieRunOverlay \
-    ClockFontCoolstoryOverlay \
-    ClockFontCrackmanOverlay \
-    ClockFontDiscoMidnightOverlay \
-    ClockFontEasterBunnyOverlay \
-    ClockFontEditPointsFilledOverlay \
-    ClockFontEditPointsOverlay \
-    ClockFontElriott2Overlay \
-    ClockFontExotwoOverlay \
-    ClockFontFibographyOverlay \
-    ClockFontFifa2018Overlay \
-    ClockFontFloorlightOverlay \
-    ClockFontGautsMotelUpperRightOverlay \
-    ClockFontGoogleSansFlexOverlay \
-    ClockFontGrandHotelOverlay \
-    ClockFontHangedOverlay \
-    ClockFontHarmonySansOverlay \
-    ClockFontHotSweatOverlay \
-    ClockFontKGOnlyHopeOverlay \
-    ClockFontKaramuruhOverlay \
-    ClockFontKingthingsOverlay \
-    ClockFontLMSCliffordOverlay \
-    ClockFontLatoOverlay \
-    ClockFontLinotteOverlay \
-    ClockFontLittleBunnyOverlay \
-    ClockFontLowerAtmosphereOverlay \
-    ClockFontMessingLetternOverlay \
-    ClockFontMonbijouxClownpieceOverlay \
-    ClockFontMotorola \
-    ClockFontNeonDiscoOverlay \
-    ClockFontNinjasOverlay \
-    ClockFontNokiaPureOverlay \
-    ClockFontNothingDotHeadlineOverlay \
-    ClockFontNunitoOverlay \
-    ClockFontOneplusSansOverlay \
-    ClockFontOneplusSlateOverlay \
-    ClockFontOswaldOverlay \
-    ClockFontPinewoodOverlay \
-    ClockFontPlaidEventOverlay \
-    ClockFontPlantsLettersOverlay \
-    ClockFontPlayOverlay \
-    ClockFontQuandoOverlay \
-    ClockFontQuickSouthOverlay \
-    ClockFontRedressedOverlay \
-    ClockFontReemKufiOverlay \
-    ClockFontRemponkOverlay \
-    ClockFontRobotoCondensedOverlay \
-    ClockFontRomantiquesOverlay \
-    ClockFontRoundheadsOverlay \
-    ClockFontRubikOverlay \
-    ClockFontSamsungOneOverlay \
-    ClockFontSansSerifOverlay \
-    ClockFontScrapItUpOverlay \
-    ClockFontSonySketchOverlay \
-    ClockFontSpaceGameOverlay \
-    ClockFontStandardHeaderOverlay \
-    ClockFontStoropiaOverlay \
-    ClockFontSurferOverlay \
-    ClockFontTh3machineOverlay \
-    ClockFontUbuntuOverlay \
-    ClockFontVtksdura3dOverlay \
-    ClockFontZnikomitNo24Overlay \
-    ClockFontIOSOverlay \
-    ClockFontHerculesOverlay \
-    ClockFontSlimOverlay \
-    ClockFontNtype82Overlay \
-    ClockFontSubwayOverlay \
-    FontAccuratistOverlay \
-    FontAclonicaOverlay \
-    FontAmaranteOverlay \
-    FontBariolOverlay \
-    FontCagliostroOverlay \
-    FontCoconOverlay \
-    FontComfortaaOverlay \
-    FontComicSansOverlay \
-    FontCookieRunOverlay \
-    FontCoolstoryOverlay \
-    FontExotwoOverlay \
-    FontFifa2018Overlay \
-    FontGrandHotelOverlay \
-    FontGoogleSansFlexOverlay \
-    FontHarmonySansOverlay \
-    FontIBMPlexSansOverlay \
-    FontLatoOverlay \
-    FontLinotteOverlay \
-    FontNokiaPureOverlay \
-    FontNothingDotHeadlineOverlay \
-    FontNothingDotOverlay \
-    FontNunitoOverlay \
-    FontOneplusSansOverlay \
-    FontOneplusSlateOverlay \
-    FontOswaldOverlay \
-    FontPlayOverlay \
-    FontQuandoOverlay \
-    FontRedressedOverlay \
-    FontReemKufiOverlay \
-    FontRobotoCondensedOverlay \
-    FontRookeryOverlay \
-    FontRubikOverlay \
-    FontSanFranciscoDisplayProSourceOverlay \
-    FontSamsungOneOverlay \
-    FontSansSerifOverlay \
-    FontSonySketchOverlay \
-    FontStoropiaOverlay \
-    FontSurferOverlay \
-    FontUbuntuOverlay \
-    FontExtFontOverlay
+#    fonts_customization_emoji_facebook.xml \
+#    fonts_customization_emoji_ios.xml \
+#    fonts_customization_emoji_samsung.xml \
+#    fonts_customization_emoji_swiftui.xml \
+#    ClockFontACFilmstripOverlay \
+#    ClockFontAccuratistOverlay \
+#    ClockFontAclonicaOverlay \
+#    ClockFontAlmonteSnowOverlay \
+#    ClockFontAlphaCloudsOverlay \
+#    ClockFontAlphaFlowersOverlay \
+#    ClockFontAlphaWoodOverlay \
+#    ClockFontAmaranteOverlay \
+#    ClockFontAmpad3D2Overlay \
+#    ClockFontBariolOverlay \
+#    ClockFontBetsyFlanaganOverlay \
+#    ClockFontBigCheeseOverlay \
+#    ClockFontBrandayolqOverlay \
+#    ClockFontBudmoJigglerOverlay \
+#    ClockFontBunnyRabbitsOverlay \
+#    ClockFontCFBadNewsOverlay \
+#    ClockFontCFOneTwoTreesOverlay \
+#    ClockFontCagliostroOverlay \
+#    ClockFontCatOverlay \
+#    ClockFontCoconOverlay \
+#    ClockFontComfortaaOverlay \
+#    ClockFontComicSansOverlay \
+#    ClockFontConcentrateOverlay \
+#    ClockFontCookieRunOverlay \
+#    ClockFontCoolstoryOverlay \
+#    ClockFontCrackmanOverlay \
+#    ClockFontDiscoMidnightOverlay \
+#    ClockFontEasterBunnyOverlay \
+#    ClockFontEditPointsFilledOverlay \
+#    ClockFontEditPointsOverlay \
+#    ClockFontElriott2Overlay \
+#    ClockFontExotwoOverlay \
+#    ClockFontFibographyOverlay \
+#    ClockFontFifa2018Overlay \
+#    ClockFontFloorlightOverlay \
+#    ClockFontGautsMotelUpperRightOverlay \
+#    ClockFontGoogleSansFlexOverlay \
+#    ClockFontGrandHotelOverlay \
+#    ClockFontHangedOverlay \
+#    ClockFontHarmonySansOverlay \
+#    ClockFontHotSweatOverlay \
+#    ClockFontKGOnlyHopeOverlay \
+#    ClockFontKaramuruhOverlay \
+#    ClockFontKingthingsOverlay \
+#    ClockFontLMSCliffordOverlay \
+#    ClockFontLatoOverlay \
+#    ClockFontLinotteOverlay \
+#    ClockFontLittleBunnyOverlay \
+#    ClockFontLowerAtmosphereOverlay \
+#    ClockFontMessingLetternOverlay \
+#    ClockFontMonbijouxClownpieceOverlay \
+#    ClockFontMotorola \
+#    ClockFontNeonDiscoOverlay \
+#    ClockFontNinjasOverlay \
+#    ClockFontNokiaPureOverlay \
+#    ClockFontNothingDotHeadlineOverlay \
+#    ClockFontNunitoOverlay \
+#    ClockFontOneplusSansOverlay \
+#    ClockFontOneplusSlateOverlay \
+#    ClockFontOswaldOverlay \
+#    ClockFontPinewoodOverlay \
+#    ClockFontPlaidEventOverlay \
+#    ClockFontPlantsLettersOverlay \
+#    ClockFontPlayOverlay \
+#    ClockFontQuandoOverlay \
+#    ClockFontQuickSouthOverlay \
+#    ClockFontRedressedOverlay \
+#    ClockFontReemKufiOverlay \
+#    ClockFontRemponkOverlay \
+#    ClockFontRobotoCondensedOverlay \
+#    ClockFontRomantiquesOverlay \
+#    ClockFontRoundheadsOverlay \
+#    ClockFontRubikOverlay \
+#    ClockFontSamsungOneOverlay \
+#    ClockFontSansSerifOverlay \
+#    ClockFontScrapItUpOverlay \
+#    ClockFontSonySketchOverlay \
+#    ClockFontSpaceGameOverlay \
+#    ClockFontStandardHeaderOverlay \
+#    ClockFontStoropiaOverlay \
+#    ClockFontSurferOverlay \
+#    ClockFontTh3machineOverlay \
+#    ClockFontUbuntuOverlay \
+#    ClockFontVtksdura3dOverlay \
+#    ClockFontZnikomitNo24Overlay \
+#    ClockFontIOSOverlay \
+#    ClockFontHerculesOverlay \
+#    ClockFontSlimOverlay \
+#    ClockFontNtype82Overlay \
+#    ClockFontSubwayOverlay \
+#    FontAccuratistOverlay \
+#    FontAclonicaOverlay \
+#    FontAmaranteOverlay \
+#    FontBariolOverlay \
+#    FontCagliostroOverlay \
+#    FontCoconOverlay \
+#    FontComfortaaOverlay \
+#    FontComicSansOverlay \
+#    FontCookieRunOverlay \
+#    FontCoolstoryOverlay \
+#    FontExotwoOverlay \
+#    FontFifa2018Overlay \
+#    FontGrandHotelOverlay \
+#    FontGoogleSansFlexOverlay \
+#    FontHarmonySansOverlay \
+#    FontIBMPlexSansOverlay \
+#    FontLatoOverlay \
+#    FontLinotteOverlay \
+#    FontNokiaPureOverlay \
+#    FontNothingDotHeadlineOverlay \
+#    FontNothingDotOverlay \
+#    FontNunitoOverlay \
+#    FontOneplusSansOverlay \
+#    FontOneplusSlateOverlay \
+#    FontOswaldOverlay \
+#    FontPlayOverlay \
+#    FontQuandoOverlay \
+#    FontRedressedOverlay \
+#    FontReemKufiOverlay \
+#    FontRobotoCondensedOverlay \
+#    FontRookeryOverlay \
+#    FontRubikOverlay \
+#    FontSanFranciscoDisplayProSourceOverlay \
+#    FontSamsungOneOverlay \
+#    FontSansSerifOverlay \
+#    FontSonySketchOverlay \
+#    FontStoropiaOverlay \
+#    FontSurferOverlay \
+#    FontUbuntuOverlay \
+#    FontExtFontOverlay
 
-PRODUCT_PACKAGES += \
-    NavbarAndroidOverlay \
-    NavbarAsusOverlay \
-    NavbarMotoOverlay \
-    NavbarNexusOverlay \
-    NavbarOldOverlay \
-    NavbarOnePlusOverlay \
-    NavbarOneUiOverlay \
-    NavbarSammyOverlay \
-    NavbarTecnoCamonOverlay \
-    NavbarDoraOverlay
+#PRODUCT_PACKAGES += \
+#    NavbarAndroidOverlay \
+#    NavbarAsusOverlay \
+#    NavbarMotoOverlay \
+#    NavbarNexusOverlay \
+#    NavbarOldOverlay \
+#    NavbarOnePlusOverlay \
+#    NavbarOneUiOverlay \
+#    NavbarSammyOverlay \
+#    NavbarTecnoCamonOverlay \
+#    NavbarDoraOverlay
 
 # Themes
 PRODUCT_PACKAGES += \
     AndroidBlackThemeOverlay \
-    ImmersiveNavigationOverlay
+    ImmersiveNavigationOverlay \
+    FontGoogleSansFlexOverlay
 
-ifeq ($(TARGET_HAS_UDFPS),true)
-    PRODUCT_PACKAGES += \
-        UdfpsIcons \
-        UdfpsAnimations
-endif
+#ifeq ($(TARGET_HAS_UDFPS),true)
+#    PRODUCT_PACKAGES += \
+#        UdfpsIcons \
+#        UdfpsAnimations
+#endif
 
 # Bootanimation
 TARGET_SCREEN_WIDTH ?= 1080
@@ -216,17 +217,17 @@ PRODUCT_PACKAGES += \
 	bootanimation-dark.zip
 
 # QS
-PRODUCT_PACKAGES += \
-    QSMedia
+#PRODUCT_PACKAGES += \
+#    QSMedia
 
-PRODUCT_PACKAGES += \
-    HideSmartSpace \
-    SmartSpaceOffset \
-    HideClock
+#PRODUCT_PACKAGES += \
+#    HideSmartSpace \
+#    SmartSpaceOffset \
+#    HideClock
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,vendor/extras/prebuilt/product/media/audio/ui,$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui) \
     $(call find-copy-subdir-files,*,vendor/extras/product/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts)
 
-PRODUCT_PRODUCT_PROPERTIES += \
-    persist.sys.ax_emoji_style=android
+#PRODUCT_PRODUCT_PROPERTIES += \
+#    persist.sys.ax_emoji_style=android
