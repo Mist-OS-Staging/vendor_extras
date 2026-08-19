@@ -241,3 +241,5 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.ax_emoji_style=android
+
+$(call inherit-product-if-exists, vendor/extras/sdk/ax_tflite/common.mk)
