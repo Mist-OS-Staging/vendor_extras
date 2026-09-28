@@ -166,6 +166,7 @@ PRODUCT_PACKAGES += \
     FontRookeryOverlay \
     FontRubikOverlay \
     FontSamsungOneOverlay \
+    FontOhMyFontOverlay \
     FontSanFranciscoDisplayProSourceOverlay \
     FontSansSerifOverlay \
     FontSansSerifProOverlay \
