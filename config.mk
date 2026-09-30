@@ -6,17 +6,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Clocks (SystemUI)
-PRODUCT_PACKAGES += \
-    SystemUIClocks-BigNum \
-    SystemUIClocks-Calligraphy \
-    SystemUIClocks-Flex \
-    SystemUIClocks-Growth \
-    SystemUIClocks-Inflate \
-    SystemUIClocks-Metro \
-    SystemUIClocks-NumOverlap \
-    SystemUIClocks-Weather
-
 ifeq ($(WITH_GMS),false)
 PRODUCT_PACKAGES += \
     Launcher3NoGestureHintOverlay
