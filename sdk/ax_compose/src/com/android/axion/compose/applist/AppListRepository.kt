@@ -16,9 +16,13 @@
 
 package com.android.axion.compose.applist
 
+import android.content.Context
+import android.content.Intent
 import android.content.pm.ApplicationInfo
 import android.content.pm.PackageManager
 import android.graphics.drawable.Drawable
+import android.os.UserHandle
+import android.os.UserManager
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.State
@@ -35,6 +39,8 @@ enum class AppFilter {
     ALL,
     NO_OVERLAYS,
     LAUNCHABLE_ONLY,
+    /** Also list the apps of the clone (dual app) profiles of the current user. */
+    INCLUDE_DUAL_APPS,
 }
 
 data class AppEntry(
@@ -43,6 +49,8 @@ data class AppEntry(
     val label: String,
     val icon: Drawable,
     val isSystem: Boolean,
+    val userId: Int = 0,
+    val isClone: Boolean = false,
 )
 
 @Composable
@@ -54,26 +62,45 @@ fun rememberAppList(vararg filters: AppFilter): State<List<AppEntry>> {
 
     LaunchedEffect(filterSet) {
         withContext(Dispatchers.IO) {
-            val apps = pm.getInstalledApplications(PackageManager.GET_META_DATA)
-            val entries = apps.mapNotNull { info ->
-                val isSystem = info.flags and ApplicationInfo.FLAG_SYSTEM != 0
+            val selfId = UserHandle.myUserId()
+            val users = buildList {
+                add(selfId to false)
+                if (AppFilter.INCLUDE_DUAL_APPS in filterSet) {
+                    getCloneProfileIds(context, selfId).forEach { add(it to true) }
+                }
+            }
 
-                if (AppFilter.USER_ONLY in filterSet && isSystem) return@mapNotNull null
-                if (AppFilter.SYSTEM_ONLY in filterSet && !isSystem) return@mapNotNull null
-                if (AppFilter.NO_OVERLAYS in filterSet && info.isResourceOverlay) return@mapNotNull null
-                if (AppFilter.LAUNCHABLE_ONLY in filterSet &&
-                    pm.getLaunchIntentForPackage(info.packageName) == null) return@mapNotNull null
+            val entries = users.flatMap { (userId, isClone) ->
+                val apps = if (userId == selfId) {
+                    pm.getInstalledApplications(PackageManager.GET_META_DATA)
+                } else {
+                    runCatching {
+                        pm.getInstalledApplicationsAsUser(PackageManager.GET_META_DATA, userId)
+                    }.getOrNull() ?: emptyList()
+                }
+                apps.mapNotNull { info ->
+                    val isSystem = info.flags and ApplicationInfo.FLAG_SYSTEM != 0
 
-                val icon = runCatching { info.loadIcon(pm) }.getOrNull() ?: return@mapNotNull null
-                val className = pm.getLaunchIntentForPackage(info.packageName)
-                    ?.component?.className ?: ""
-                AppEntry(
-                    packageName = info.packageName,
-                    className = className,
-                    label = info.loadLabel(pm).toString(),
-                    icon = icon,
-                    isSystem = isSystem,
-                )
+                    if (AppFilter.USER_ONLY in filterSet && isSystem) return@mapNotNull null
+                    if (AppFilter.SYSTEM_ONLY in filterSet && !isSystem) return@mapNotNull null
+                    if (AppFilter.NO_OVERLAYS in filterSet && info.isResourceOverlay) return@mapNotNull null
+
+                    val className = getLaunchClassName(pm, info.packageName, userId, selfId)
+                    if (AppFilter.LAUNCHABLE_ONLY in filterSet && className == null) {
+                        return@mapNotNull null
+                    }
+
+                    val icon = runCatching { info.loadIcon(pm) }.getOrNull() ?: return@mapNotNull null
+                    AppEntry(
+                        packageName = info.packageName,
+                        className = className ?: "",
+                        label = info.loadLabel(pm).toString(),
+                        icon = icon,
+                        isSystem = isSystem,
+                        userId = userId,
+                        isClone = isClone,
+                    )
+                }
             }.sortedBy { it.label.lowercase() }
 
             state.value = entries
@@ -81,6 +108,33 @@ fun rememberAppList(vararg filters: AppFilter): State<List<AppEntry>> {
     }
 
     return state
+}
+
+private fun getCloneProfileIds(context: Context, selfId: Int): List<Int> {
+    return runCatching {
+        context.getSystemService(UserManager::class.java)
+            ?.getProfiles(selfId)
+            ?.filter { it.id != selfId && it.isCloneProfile }
+            ?.map { it.id }
+    }.getOrNull() ?: emptyList()
+}
+
+/** The launcher activity class of [packageName] for [userId], or null if it has none. */
+private fun getLaunchClassName(
+    pm: PackageManager,
+    packageName: String,
+    userId: Int,
+    selfId: Int,
+): String? {
+    if (userId == selfId) {
+        return pm.getLaunchIntentForPackage(packageName)?.component?.className
+    }
+    val intent = Intent(Intent.ACTION_MAIN)
+        .addCategory(Intent.CATEGORY_LAUNCHER)
+        .setPackage(packageName)
+    return runCatching {
+        pm.queryIntentActivitiesAsUser(intent, 0, userId).firstOrNull()?.activityInfo?.name
+    }.getOrNull()
 }
 
 @Composable
